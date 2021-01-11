@@ -5,9 +5,7 @@
 	<title>Perfeccionando HTML</title>
 </head>
 <body>
-	<h1>
-		Perfeccionando HTML con coursera.
-	</h1>
+	<h1 id="top">Perfeccionando HTML con coursera.</h1>
 	<header>
 		Pequenia info sobre la pagina web. Estoy haciendo el curso FULL STACK en coursera y veremos como va.
 		<nav>
@@ -15,7 +13,7 @@
 		</nav>
 	</header>
 
-	<section> <h2>Seccion de articulos.(head de la seccion)</h2>
+	<section id="section1"> <h2>Seccion de articulos.(head de la seccion)</h2>
 		<article><h3>Lista de Articulos:(head del articulo)</h3>
 			<div>
 				<ul>	
@@ -32,7 +30,7 @@
 				</ul>
 			</div>
 		</article>
-		<section><h2>Probando lista ordenada.</h2>
+		<section id="section2"><h2>Probando lista ordenada.</h2>
 			<article> <h3>Formula X del profesor Utonio:</h3>
 				<div>
 					<ol>
@@ -47,14 +45,22 @@
 	<section><h4>Probando Links:</h4>
 		<div><a href="other.html" title="Dir Local">Ir a la pag auxiliar.</a></div>
 		<br>
-
+		<h5>Links misma pagina.</h5>
+		<ul>
+			<li><a href="#section1"></a></li>
+			<li><a href="#section2"></a></li>
+			<li><a href="#info"></a></li>
+		</ul>
 	</section>
-	<aside>
+	<aside id="info">
 		Mi nombre es Joaquin, tengo 24 anios y soy de Montevideo/Uruguay.(aside)
 		<div><a href="https://www.instagram.com/joaco.dls" target="_blank" title="Seguime!">Mi perfil de Instagram!</a></div>
 	</aside>
 	<footer>
 		 Curso Full Stack, 28/12/2020. Montevideo - Uruguay.(Pie)
+		 <p>
+		 	Volver al Inicio: <a href="#top"></a>
+		 </p>
 	</footer>
 </body>
 </html>
